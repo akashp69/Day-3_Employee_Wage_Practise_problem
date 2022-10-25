@@ -9,7 +9,7 @@ public class EmployeeWage {
     static final int IS_PART_TIME = 1;
     static final int WORKING_DAYS_PER_MONTH = 20;
 
-    static void EmployeeWage(){
+    static void EmployeeWage(String companyName , int empperhour , int totalworkingdays , int totaldayinmonths){
         int day = 1;
         int totalWorkingHours = 0;
         int totalWage = 0;
@@ -42,9 +42,19 @@ public class EmployeeWage {
 
     public static void main(String[] args) {
 
-        System.out.println("Welcome to Employee Wage");
-        EmployeeWage();
+        System.out.println("Welcome to Employee Wage For Multiples Company ");
+        System.out.println("\n SBI BANK ");
+        EmployeeWage("SBI" ,100, 20 ,25);
+        System.out.println("\n**********************");
 
+
+        System.out.println("\n AXIS BANK ");
+        EmployeeWage("AXIS BANK " ,250, 25 ,28);
+        System.out.println("\n**********************");
+
+
+        System.out.println("\n ICICI BANK ");
+        EmployeeWage("ICICI BANK" ,500, 15 ,30);
     }
 
 }
