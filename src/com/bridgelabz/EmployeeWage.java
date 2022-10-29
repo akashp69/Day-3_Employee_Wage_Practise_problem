@@ -9,7 +9,7 @@ public class EmployeeWage {
     static final int IS_PART_TIME = 1;
     static final int WORKING_DAYS_PER_MONTH = 20;
 
-    static void EmployeeWage(){
+    static void employeeWage(){
         int day = 1;
         int totalWorkingHours = 0;
         int totalWage = 0;
@@ -43,7 +43,7 @@ public class EmployeeWage {
     public static void main(String[] args) {
 
         System.out.println("Welcome to Employee Wage");
-        EmployeeWage();
+        employeeWage();
 
     }
 
